@@ -1,0 +1,1538 @@
+/*login*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #000; /* Black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    background-color: #1c1c1c;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 350px;
+}
+
+.logo img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.company-name {
+    color: #ff6600; /* Orange color for the company name */
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+.login-box h2 {
+    color: #ff6600; /* Orange color for the title */
+    margin-bottom: 30px;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #ff6600;
+    outline: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.input-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    color: #ff6600;
+    pointer-events: none;
+    transition: 0.5s;
+    font-size: 18px;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+    top: -30px;
+    left: 0;
+    color: #ff6600;
+    font-size: 14px;
+}
+
+.login-btn {
+    background-color: #ff6600;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.login-btn:hover {
+    background-color: #e65c00;
+}
+
+/*Navbar*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #000;
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #1c1c1c;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.company-name {
+    color: #ff6600;
+    font-size: 20px;
+}
+
+.nav-menu {
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+}
+
+.nav-menu li {
+    width: 100%;
+}
+
+.nav-menu li a {
+    display: block;
+    padding: 15px 20px;
+    color: #ff6600;
+    text-decoration: none;
+    font-size: 16px;
+    border-bottom: 1px solid #333;
+    transition: background 0.3s ease;
+}
+
+.nav-menu li a:hover {
+    background-color: #ff6600;
+    color: #1c1c1c;
+}
+
+.nav-menu li a:active {
+    background-color: #e65c00;
+}
+
+.content {
+    margin-left: 250px; /* Same width as the sidebar */
+    padding: 20px;
+    color: white;
+}
+
+
+
+/*Dashboard*/
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #000; /* Black background */
+    display: flex;
+    height: 100vh;
+    overflow: hidden; /* Prevent vertical scroll */
+}
+
+/* Dashboard Content */
+.dashboard-content {
+    margin-left: 250px; /* Space for the sidebar */
+    padding: 20px;
+    width: calc(100% - 250px); /* Full width minus sidebar */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+h1 {
+    color: #ff6600; /* Orange title */
+    margin-bottom: 20px;
+}
+
+/* Box Container */
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    flex-grow: 1; /* Allow container to grow and fill space */
+}
+
+/* Individual Boxes */
+.box {
+    background-color: #1c1c1c;
+    width: calc(33.33% - 20px); /* 3 boxes per row, with space between */
+    height: calc(100% / 3 - 30px); /* Make boxes fill 1/3 of screen height with gaps */
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    color: #ff6600; /* Orange text inside the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for boxes */
+.box:hover {
+    transform: translateY(-10px); /* Lift the box slightly */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7); /* Enhance shadow */
+}
+
+/*city*/
+
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #000; /* Black background */
+    display: flex;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+
+/* Form Styles */
+form {
+    background-color: #1c1c1c;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: #ff6600;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+form input[type="submit"] {
+    background-color: #ff6600;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #ff4500;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: white;
+}
+
+table, th, td {
+    border: 1px solid #444;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #333;
+    color: #ff6600;
+}
+
+td {
+    background-color: #1c1c1c;
+}
+
+/* Box Container (If you want to add some boxes) */
+.box-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+/*Dealer*/
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #000; /* Black background */
+    display: flex;
+    height: 100vh;
+    overflow: hidden; /* Prevent vertical scroll */
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #1c1c1c;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.company-name {
+    color: #ff6600;
+    font-size: 20px;
+}
+
+.nav-menu {
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+}
+
+.nav-menu li {
+    width: 100%;
+}
+
+.nav-menu li a {
+    display: block;
+    padding: 15px 20px;
+    color: #ff6600;
+    text-decoration: none;
+    font-size: 16px;
+    border-bottom: 1px solid #333;
+    transition: background 0.3s ease;
+}
+
+.nav-menu li a:hover {
+    background-color: #ff6600;
+    color: #1c1c1c;
+}
+
+.nav-menu li a:active {
+    background-color: #e65c00;
+}
+
+/* Content Section */
+.content {
+    margin-left: 250px; /* Same width as the sidebar */
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full height of the viewport */
+}
+
+/* Search Bar */
+.search-bar {
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #ff6600;
+    color: #fff;
+    background-color: #1c1c1c;
+    outline: none;
+}
+
+.suggestions {
+    list-style-type: none;
+    background-color: #1c1c1c;
+    border: 2px solid #ff6600;
+    border-radius: 5px;
+    margin-top: 5px;
+    max-height: 100px;
+    overflow-y: auto;
+}
+
+.suggestions li {
+    padding: 10px;
+    color: #ff6600;
+}
+
+.suggestions li:hover {
+    background-color: #ff6600;
+    color: #1c1c1c;
+}
+
+/* Container for Form and Table */
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1; /* Allow container to grow and fill space */
+}
+
+/* Dealer Form Styles */
+.form-container {
+    background-color: #1c1c1c;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    width: 48%; /* Set width to occupy half of the container */
+    height: calc(100% - 60px); /* Full height minus search bar */
+    overflow: auto; /* Allow scrolling if necessary */
+}
+
+.form-container h2 {
+    color: #ff6600; /* Orange color for the title */
+    margin-bottom: 20px;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-box input, 
+.input-box select {
+    width: 100%;
+    padding: 10px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #ff6600;
+    outline: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.input-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    color: #ff6600;
+    pointer-events: none;
+    transition: 0.5s;
+    font-size: 18px;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label,
+.input-box select:focus ~ label {
+    top: -30px;
+    left: 0;
+    color: #ff6600;
+    font-size: 14px;
+}
+
+.submit-btn {
+    background-color: #ff6600;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background-color: #e65c00;
+}
+
+/* Table Styles */
+.table-container {
+    width: 48%; /* Set width to occupy half of the container */
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    padding: 20px;
+    height: calc(100% - 60px); /* Full height minus search bar */
+    overflow: auto; /* Allow scrolling if necessary */
+}
+
+.table-container h2 {
+    color: #ff6600; /* Orange color for the title */
+    margin-bottom: 20px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+    color: #ff6600; /* Orange text */
+}
+
+.table th {
+    background-color: #333;
+}
+
+.table tr:hover {
+    background-color: #444; /* Darker background on row hover */
+}
+
+.edit-btn, .delete-btn {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.edit-btn:hover {
+    background-color: #e65c00;
+}
+
+.delete-btn {
+    background-color: #d9534f;
+}
+
+.delete-btn:hover {
+    background-color: #c9302c;
+}
+
+
+/*Billing */
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #000; /* Black background */
+    display: flex;
+    height: 100vh; /* Full height */
+    
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #1c1c1c;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.company-name {
+    color: #ff6600;
+    font-size: 20px;
+}
+
+.nav-menu {
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+}
+
+.nav-menu li {
+    width: 100%;
+}
+
+.nav-menu li a {
+    display: block;
+    padding: 15px 20px;
+    color: #ff6600;
+    text-decoration: none;
+    font-size: 16px;
+    border-bottom: 1px solid #333;
+    transition: background 0.3s ease;
+}
+
+.nav-menu li a:hover {
+    background-color: #ff6600;
+    color: #1c1c1c;
+}
+
+/* Content Section */
+.content {
+    margin-left: 250px; /* Same width as the sidebar */
+    padding: 20px;
+    color: white;
+    height: 100%; /* Full height */
+    width: 100%;
+    overflow: auto; /* Allow scrolling if necessary */
+    
+}
+
+/* Billing Section Styles */
+.billing-section {
+    margin-bottom: 20px;
+    
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    color: #ff6600;
+    margin-bottom: 5px;
+}
+
+select, input[type="number"], input[type="submit"], button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ff6600;
+    border-radius: 5px;
+    background-color: #1c1c1c;
+    color: #fff;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+}
+
+button:hover {
+    background-color: #e65c00;
+}
+
+/* Invoice Table Styles */
+#invoice-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#invoice-table th, #invoice-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+    color: #ff6600; /* Orange text */
+}
+
+#invoice-table th {
+    background-color: #333;
+}
+
+#invoice-table tr:hover {
+    background-color: #444; /* Darker background on row hover */
+}
+
+/* Total Styles */
+h3 {
+    color: #ff6600; /* Orange color for the invoice section */
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.content {
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+#success-popup {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+
+
+
+/*product*/
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #000; /* Black background */
+    display: flex;
+    height: 100vh; /* Full height */
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #1c1c1c;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.company-name {
+    color: #ff6600;
+    font-size: 20px;
+}
+
+.nav-menu {
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+}
+
+.nav-menu li {
+    width: 100%;
+}
+
+.nav-menu li a {
+    display: block;
+    padding: 15px 20px;
+    color: #ff6600;
+    text-decoration: none;
+    font-size: 16px;
+    border-bottom: 1px solid #333;
+    transition: background 0.3s ease;
+}
+
+.nav-menu li a:hover {
+    background-color: #ff6600;
+    color: #1c1c1c;
+}
+
+.nav-menu li a:active {
+    background-color: #e65c00;
+}
+
+/* Content Section */
+.content {
+    margin-left: 250px; /* Same width as the sidebar */
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full height */
+}
+
+/* Container for Form and Table */
+.container {
+    display: flex;
+    flex-direction: column; /* Stack form above table */
+    gap: 20px; /* Space between form and table */
+    height: calc(100% - 60px); /* Adjusting for header space */
+}
+
+/* Form Styles */
+.form-container {
+    background-color: #1c1c1c;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    width: 100%; /* Full width of the content area */
+}
+
+.form-container h1 {
+    color: #ff6600; /* Orange color for the title */
+    margin-bottom: 20px;
+    text-align: center; /* Center align title */
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #ff6600;
+    outline: none;
+    color: #fff;
+    font-size: 18px;
+    transition: border-color 0.3s ease;
+}
+
+.input-box input:focus {
+    border-bottom-color: #e65c00; /* Change border color on focus */
+}
+
+.input-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    color: #ff6600;
+    pointer-events: none;
+    transition: 0.5s;
+    font-size: 18px;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+    top: -30px;
+    left: 0;
+    color: #ff6600;
+    font-size: 14px;
+}
+
+.submit-btn {
+    background-color: #ff6600;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+.submit-btn:hover {
+    background-color: #e65c00; /* Darker on hover */
+}
+
+/* Table Styles */
+.table-container {
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%; /* Full width of the content area */
+    overflow-y: auto; /* Allow scrolling if the content exceeds height */
+}
+
+.table-container h2 {
+    color: #ff6600; /* Orange color for the title */
+    margin-bottom: 20px;
+    text-align: center; /* Center align title */
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+    color: #ff6600; /* Orange text */
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+.table th {
+    background-color: #333;
+    text-align: center; /* Center text in header */
+}
+
+.table tr:hover {
+    background-color: #444; /* Darker background on row hover */
+}
+
+.edit-btn, .delete-btn {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 5px;
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+.edit-btn:hover {
+    background-color: #e65c00; /* Darker on hover */
+}
+
+.delete-btn {
+    background-color: #d9534f;
+}
+
+.delete-btn:hover {
+    background-color: #c9302c;
+}
+
+
+/*pending*/
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #000; /* Black background */
+    display: flex;
+    height: 100vh; /* Full height */
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #1c1c1c;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.company-name {
+    color: #ff6600;
+    font-size: 20px;
+}
+
+/* Content Section */
+.content {
+    margin-left: 250px; /* Same width as the sidebar */
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full height */
+}
+
+/* Total Container */
+.total-container {
+    background-color: #1c1c1c;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Search Container */
+.search-container {
+    margin-bottom: 20px;
+}
+
+.search-container input {
+    width: 100%;
+    padding: 10px;
+    background-color: #1c1c1c;
+    border: 2px solid #ff6600;
+    border-radius: 5px;
+    color: white;
+}
+
+/* Table Styles */
+.table-container {
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    padding: 20px;
+    overflow-y: auto; /* Allow scrolling if the content exceeds height */
+    width: 100%;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+    color: #ff6600; /* Orange text */
+}
+
+.table th {
+    background-color: #333;
+}
+
+.table tr:hover {
+    background-color: #444; /* Darker background on row hover */
+}
+
+/* Button Styles */
+.pay-btn, .print-btn {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.pay-btn:hover {
+    background-color: #e65c00;
+}
+
+.print-btn {
+    background-color: #5bc0de;
+}
+
+.print-btn:hover {
+    background-color: #31b0d5;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.content {
+    padding: 20px;
+}
+
+.total-container {
+    margin-bottom: 20px;
+}
+
+.table-container {
+    margin-top: 20px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.table th {
+    background-color: #f2f2f2;
+}
+
+
+
+
+
+/*Row */
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #000; /* Black background */
+    display: flex;
+    height: 100vh; /* Full height */
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #1c1c1c;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.company-name {
+    color: #ff6600;
+    font-size: 20px;
+}
+
+/* Content Section */
+.content {
+    margin-left: 250px; /* Same width as the sidebar */
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full height */
+}
+
+/* Form Container */
+.form-container {
+    background-color: #1c1c1c;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #333;
+    border: 2px solid #ff6600;
+    border-radius: 5px;
+    color: white;
+}
+
+/* Button Styles */
+.form-container button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.form-container button:hover {
+    background-color: #e65c00;
+}
+
+/* Table Styles */
+.table-container {
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    padding: 20px;
+    overflow-y: auto; /* Allow scrolling if the content exceeds height */
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+    color: #ff6600; /* Orange text */
+}
+
+.table th {
+    background-color: #333;
+}
+
+.table tr:hover {
+    background-color: #444; /* Darker background on row hover */
+}
+
+/* Button Styles in Table */
+.edit-btn, .delete-btn {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.edit-btn:hover {
+    background-color: #e65c00;
+}
+
+.delete-btn {
+    background-color: #d9534f; /* Red for delete */
+}
+
+.delete-btn:hover {
+    background-color: #c9302c;
+}
+
+/* Labour Management */
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #000; /* Black background */
+    display: flex;
+    height: 100vh; /* Full height */
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #1c1c1c;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.company-name {
+    color: #ff6600;
+    font-size: 20px;
+}
+
+/* Content Section */
+.content {
+    margin-left: 250px; /* Same width as the sidebar */
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    background-color: #1c1c1c;
+    border: 2px solid #ff6600;
+    border-radius: 5px;
+    color: white;
+}
+
+/* Button Styles */
+.submit-btn {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.submit-btn:hover {
+    background-color: #e65c00;
+}
+
+/* Table Styles */
+.table-container {
+    margin-top: 20px;
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+    color: #ff6600; /* Orange text */
+}
+
+.table th {
+    background-color: #333;
+}
+
+.table tr:hover {
+    background-color: #444; /* Darker background on row hover */
+}
+
+/* Button Styles in Table */
+.edit-btn, .delete-btn {
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 5px; /* Space between buttons */
+}
+
+.edit-btn {
+    background-color: #ff6600; /* Orange */
+}
+
+.edit-btn:hover {
+    background-color: #e65c00; /* Darker orange on hover */
+}
+
+.delete-btn {
+    background-color: #d9534f; /* Bootstrap Danger Color */
+}
+
+.delete-btn:hover {
+    background-color: #c9302c; /* Darker red on hover */
+}
+
+
+/*loan*/
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #000; /* Black background */
+    display: flex;
+    height: 100vh; /* Full height */
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #1c1c1c;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.company-name {
+    color: #ff6600;
+    font-size: 20px;
+}
+
+/* Content Section */
+.content {
+    margin-left: 250px; /* Same width as the sidebar */
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    background-color: #1c1c1c;
+    border: 2px solid #ff6600;
+    border-radius: 5px;
+    color: white;
+}
+
+/* Button Styles */
+.submit-btn {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.submit-btn:hover {
+    background-color: #e65c00;
+}
+
+/* Table Styles */
+.table-container {
+    margin-top: 20px;
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+    color: #ff6600; /* Orange text */
+}
+
+.table th {
+    background-color: #333;
+}
+
+.table tr:hover {
+    background-color: #444; /* Darker background on row hover */
+}
+
+/* Button Styles in Table */
+.edit-btn, .delete-btn {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.edit-btn:hover {
+    background-color: #e65c00;
+}
+
+.delete-btn {
+    background-color: #d9534f; /* Bootstrap Danger Color */
+}
+
+.delete-btn:hover {
+    background-color: #c9302c; /* Darker red on hover */
+}
